@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        background: #000;
+        /* paddingかborderで外枠をつける */
+        /* border: 1px solid; */
+        padding: 1px;
+      }
+      .box {
+        position: relative;
+        background: #fff;
+        /* 分割する個数-1のpxを100%から引く */
+        width: calc((100% - 8px) / 9);
+      }
+      .box::before {
+        display: block;
+        content: "";
+        padding-top: 100%;
+      }
+      .box > .aaa {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .a {
+        margin-top: 50px;
+      }
+      .a .box{
+        width: calc((100% - 2px) / 3);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="aaa">
+          1
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          2
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          3
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          4
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          5
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          6
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          7
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          8
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          9
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          10
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          11
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          12
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          13
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          14
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          15
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          16
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          17
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          18
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          19
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          20
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          21
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          22
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          23
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          24
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          25
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          26
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          27
+        </div>
+      </div>
+    </div>
+    <div class="wrapper a">
+      <div class="box">
+        <div class="aaa">
+          1
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          2
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          3
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          4
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          5
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          6
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          7
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          8
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          9
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          10
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          11
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          12
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          13
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          14
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          15
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          16
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          17
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          18
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          19
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          20
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          21
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          22
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          23
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          24
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          25
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          26
+        </div>
+      </div>
+      <div class="box">
+        <div class="aaa">
+          27
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
